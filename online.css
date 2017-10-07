@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+#zhong{
+    height: 665px;
+    width:1360px;
+    /* border: 1px solid #000; */
+}
+body{
+    background-color:#ABCDEF
+}
+@font-face{
+    font-family:first;
+    src:url('./请叫我天然萌.ttf')
+}
+#top{
+    width: 900px;
+    height: 80px;
+    margin: 0 auto;
+    line-height: 80px;
+    text-align: center;
+    font-size:50px;
+    font-family:first;
+}
+.left,.right{
+    float: left;
+    width:230px;
+    /* border:1px solid #000; */
+    text-align: center;
+    font-size: 50px;
+    font-family:first;
+}
+.left ul li,.right ul li{
+    margin-top:40px;
+    border:1px dashed #351379;
+}
+.right{
+    float:right;
+}
+
+#content{
+    width: 880px;
+    height: 550px;
+    margin: 0 auto;
+    background-color: gray;
+    padding:10px;
+    text-align: center;
+}
+#footer{
+    width: 900px;
+    height: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+#canvas{
+    background:white;
+}
+#content #tool{
+    height:150px;
+    display: flex;
+    background-color: #ccc;
+}
+#content #tool li{
+    flex:1;
+    border:1px solid black;
+}
+#content #tool #image li{
+    border:0;
+    margin-top:25px;
+    margin-left: -70px;
+    list-style: square inside;
+}
+#content #tool #image li button{
+      background-color: gray;
+      border:1px solid black;
+      box-shadow: 2px 2px #8B7373;
+}
+#content #tool #image li button:hover{
+      border:1px solid white;
+}
+#content #tool #means li,#content #tool #shape li{
+    border:0;
+    display: block;
+    float: left;
+    margin-left:25px;
+    margin-top:25px;
+}
+#content #tool #means img,#content #tool #shape img{
+    height: 20px;
+    width: 20px;
+    border: 1px solid black;
+}
+#content #tool #means img:hover,#content #tool #shape img:hover{
+    height: 20px;
+    width: 20px;
+    border: 1px solid white;
+}
+#content #tool #size{
+    padding:20px;
+}
+#content #tool #size li{
+    /* display: block; */
+    height:20px;
+    width:120px;
+    border:1px solid #ccc;
+}
+#content #tool #size li:hover{
+    /* display: block; */
+    height:20px;
+    width:120px;
+    border:1px solid #fff;
+}
+#content #tool #color{
+    padding:30px 18px 20px 18px;
+}
+#content #tool #color li{
+    /* margin-top:10px; */
+    display: block;
+    height:20px;
+    width:20px;
+    border:1px solid black;
+    float:left;
+    margin:5px 0 0 5px;
+}
+#content #tool #color li:hover{
+    border:0;
+    display: block;
+    height:20px;
+    width:20px;
+    border:1px solid #fff;
+    float:left;
+    margin:5px 0 0 5px;
+}
+#content #tool #color #red{
+    background:red;
+}
+#content #tool #color #green{
+    background:green;
+}
+#content #tool #color #blue{
+    background:blue;
+}
+#content #tool #color #yellow{
+    background:yellow;
+}
+#content #tool #color #white{
+    background:white;
+}
+#content #tool #color #black{
+    background:black;
+}
+#content #tool #color #pink{
+    background:pink;
+}
+#content #tool #color #purple{
+    background:purple;
+}
+#content #tool #color #cyan{
+    background:cyan;
+}
+#content #tool #color #orange{
+    background:orange;
+}
+
+
+

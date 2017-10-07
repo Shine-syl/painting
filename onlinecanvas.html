@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./online.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "zhong">
+    <header id = "top">HTML5在线画图</header>
+    <div class = "left">
+        <ul>
+            <li>你</li>
+            <li>若</li>
+            <li>想</li>
+            <li>画</li>
+            <li>图</li>
+        </ul>
+    </div>
+    <div class = "right">
+        <ul>
+            <li>我</li>
+            <li>来</li>
+            <li>帮</li>
+            <li>你</li>
+            <li>画</li>
+        </ul>
+    </div>
+    <div class="main">
+    <section id = "content">
+        <ul id = "tool">
+            <li>
+                 <h3>图像</h3><hr/>
+                 <ul id = "image">
+                        <li id = "saveimg" onclick = "saveing()"><button>保存图片</button></li>
+                        <li id = "clearimg" onclick = "clearing()"><button>清除图片</button></li>
+                 </ul>
+            </li>
+            <li>
+                 <h3>工具</h3><hr/>
+                 <ul id = "means">
+                    <li>
+                         <img id = "means_Brush" onclick = "drawBrush(0)" src="./images/Brush.png" alt="">
+                    </li>
+                    <li>
+                         <img id = "means_Eraser" onclick = "drawEraser(1)" src="./images/Eraser.png" alt="">
+                    </li>
+                    <li>
+                        <img id = "means_Paint" onclick = "drawPaint(2)" src="./images/Paint.png" alt="">
+                    </li>
+                    <li>
+                        <img id = "means_Straw" onclick = "drawStraw(3)" src="./images/Straw.png" alt="">
+                    </li>
+                    <li>
+                        <img id = "means_text" onclick = "drawText(4)" src="./images/text.png" alt="">
+                    </li>
+                    <li>
+                        <img id = "means_Magnifier"onclick = "drawMagnifier(5)" src="./images/Magnifier.png" alt="">
+                    </li>
+                 </ul>
+                
+            </li>
+            <li> 
+                <h3>形状</h3><hr/>
+                <ul id = "shape">
+                    <li>
+                        <img id = "shape_line" onclick = "drawLine(6)" src="./images/line.png" alt="">
+                    </li>
+                    <li>
+                        <img  id = "shape_arc" onclick = "drawArc(7)" src="./images/arc.png" alt="">
+                    </li>
+                    <li>
+                        <img  id = "shape_rect" onclick = "drawRect(8)" src="./images/rect.png" alt="">
+                    </li>
+                    <li>
+                        <img  id = "shape_poly" onclick = "drawPoly(9)" src="./images/poly.png" alt="">
+                    </li>
+                    <li>
+                        <img  id = "shape_arcfill" onclick = "drawArcfill(10)" src="./images/arcfill.png" alt="">
+                    </li>
+                    <li>
+                        <img  id = "shape_rectfill" onclick = "drawRectfill(11)" src="./images/rectfill.png" alt="">
+                    </li>
+                    </ul>
+            </li>
+            <li> 
+                <h3>线宽</h3><hr/>
+                <ul id = "size" >
+                    <li id ="size_line1px" onclick = "drawLineColor(0)">
+                        <img src="./images/line1px.png" alt="">
+                    </li>
+                    <li id ="size_line3px" onclick = "drawLineColor(1)">
+                        <img src="./images/line3px.png" alt="">
+                    </li>
+                    <li id ="size_line5px" onclick = "drawLineColor(2)">
+                        <img src="./images/line5px.png" alt="">
+                    </li>
+                    <li id ="size_line8px" onclick = "drawLineColor(3)">
+                        <img src="./images/line8px.png" alt="">
+                    </li>
+                    </ul>
+            </li>
+            <li> 
+                <h3>颜色</h3><hr/>
+                <ul id = "color">
+                    <li id = "red" onclick = "setBorderColor(this,0)"></li>
+                    <li id = "green" onclick = "setBorderColor(this,1)"></li>
+                    <li id = "blue" onclick = "setBorderColor(this,2)"></li>
+                    <li id = "yellow" onclick = "setBorderColor(this,3)"></li>
+                    <li id = "white" onclick = "setBorderColor(this,4)"></li>
+                    <li id = "black" onclick = "setBorderColor(this,5)"></li>
+                    <li id = "pink" onclick = "setBorderColor(this,6)"></li>
+                    <li id = "purple" onclick = "setBorderColor(this,7)"></li>
+                    <li id = "cyan" onclick = "setBorderColor(this,8)"></li>
+                    <li id = "orange" onclick = "setBorderColor(this,9)"></li>
+                   
+                </ul>
+            </li>
+        </ul>
+         <canvas id = "canvas" height = '400' width = '880' ></canvas>
+        <script src = "canvas.js"></script>
+    </section>
+</div>
+    <footer id = "footer">
+        <small>纯属个人自己弄得。。。</small>
+    </footer>
+</div>
+</body>
+</html>
