@@ -6,6 +6,11 @@
 ![image](https://github.com/Siyunlongshuai/image/blob/master/%E5%9B%BE%E7%89%87/painting.png)
 ## 第二张图：
 ![image](https://github.com/Siyunlongshuai/painting/blob/master/images/%E5%86%99%E5%AD%97%E6%BC%94%E7%A4%BA.png)
-### 第一步：
-先大体有个思想，但在实行过程中有好多问题，然后自己再加上文档搜的，算是大体解决了。
-只要自己坚持了，就一定会成功的
+### 思想：
+先把HTML、CSS文件写好，大体样式写出来之后。简单的说就是，写整出来一个画板出来，
+然后在写后面的js部分。
+```
+其中最主要的还是，大量的js部分，里面用了很多的函数，一个函数就是一个简单的方法。
+其次就是获取画板其它的部分，把获取画板的其它部分放在一个数组里面，方便在后面的调
+用，用了最多的就是获取画笔的这个点的坐标。
+
