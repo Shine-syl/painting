@@ -15,7 +15,7 @@
 用，用了最多的就是获取画笔的这个点的坐标。
 ```
 获取在画板上的坐标点，随着鼠标点的移动，触发了onmousemove事件，从而获取不同的坐标点。
----
+```
  canvas.onmousedown = function(e){
                 var eve = window.event||e;
                 var startX = eve.pageX - this.offsetLeft;
@@ -30,6 +30,6 @@
                     canvas.onmousemove = null;
                   }
             }
----
+```
 里面的函数比较多，使用时一定要注意，只要思路清晰了，也就好了。
 这就是js的缺点没有模块化，以后的一些打包工具解决了这个问题
