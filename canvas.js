@@ -76,6 +76,7 @@ const clearCanvas = document.getElementById('clearing');
         function drawBrush(num){
             setColor(actions,num,1);
             canvas.onmousedown = function(e){
+                console.log('124')
                 var eve = window.event||e;
                 var startX = eve.pageX - this.offsetLeft;
                 var startY = eve.clientY - this.offsetTop;
